@@ -18,6 +18,7 @@ myList.size();
 HashMap<String, String> capitalCities = new HashMap<String, String>();
 capitalCities.put("England", "London");
 capitalCities.get("England");
+capitalCities.replace("England". "London");
 capitalCities.remove("England");
 capitalCities.clear();
 capitalCities.size();
@@ -194,6 +195,14 @@ List<T> items = Arrays.asList(arr1);
 
 // Character Array to String
 String newString = new String(charArray);
+// If single character
+String str = singleChar.toString();
 // String to Character Array
 char[] charArray = str.toCharArray();
+
+// Check to see if a string contains something
+str.contains(str2); // true / false
+
+// Check if a string matches a regular expression
+str.matches(regex); // true / false
 ```
