@@ -14,6 +14,7 @@ myList.size();
 
 ```java
 // Create a HashMap object called capitalCities
+// ====
 HashMap<String, String> capitalCities = new HashMap<String, String>();
 capitalCities.put("England", "London");
 capitalCities.get("England");
@@ -22,10 +23,46 @@ capitalCities.clear();
 capitalCities.size();
 
 // Print keys
+// ===
 for (String i : capitalCities.keySet()) {
 	System.out.println(i);
 }
 ```
+
+## Stacks
+
+```java
+Stack<Integer> stack = new Stack<Integer>();
+// Push element
+stack.push(i);
+// Pop element
+Integer y = (Integer) stack.pop();
+// View element at stack top
+Integer element = (Integer) stack.peek();
+// Search element
+Integer pos = (Integer) stack.search(element);
+// Size
+int size = stack.size();
+// To see if it contains an element
+bool exists = stack.contains(i);
+```
+
+## Queues
+
+```java
+Queue<Integer> q = new LinkedList<>();
+// Add element 
+q.add(i);
+// Remove Queue Head
+int removedele = q.remove();
+// To view Queue Head
+int head = q.peek();
+// To get Queue Size
+int size = q.size();
+// To see if it contains an element
+bool exists = q.contains(i);
+```
+
 
 ## Arrays
 
@@ -35,33 +72,39 @@ Arrays.parallelSort(myCharArray1);
 List<char> charList = Arrays.asList(myCharArray1);
 
 // Example 1: Array Binary Search
+// ===
 int intArr[] = { 10, 20, 15, 22, 35 };
 Arrays.sort(intArr);
 int intKey = 22;
 int arrayIndex = Arrays.binarySearch(intArr, intKey);
 
 // Example 2: Array Comparison
+// ===
 int intArr[] = { 10, 20, 15, 22, 35 };
 int intArr1[] = { 10, 15, 22 };
 int comparison = Arrays.compare(intArr, intArr1); // returns 1
 int comparisonUnsigned = Arrays.compareUnsigned(intArr, intArr1); // returns 1
 
 // Example 3: Array copy
+// ===
 int intArr[] = { 10, 20, 15, 22, 35 };
 System.out.println(Arrays.toString(Arrays.copyOf(intArr, 10))); // [10, 20, 15, 22, 35, 0, 0, 0, 0, 0]
 System.out.pringln(Arrays.toString(Arrays.copyOfRange(intArr, 1, 3))); // [20, 15]
 
 // Example 4: How equal are multidimentional arrays?
+// ===
 int intArr[][] = { { 10, 20, 15, 22, 35 } };  
 int intArr1[][] = { { 10, 15, 22 } };
 Arrays.deepEquals(intArr, intArr1); // false
 
 // Example 5: Get hash code of a multidimentional array
+// ===
 Arrays.deepHashCode(intArr); // 38475344
 // For single dimensional arrays:
 Arrays.hashCode(intArr);
 
 // Example 6: Get the 1st element with a mismatch
+// ===
 int intArr[] = { 10, 20, 15, 22, 35 }; 
 int intArr1[] = { 10, 15, 22 };
 Arrays.mismatch(intArr, intArr1); // 1
@@ -73,6 +116,7 @@ Arrays.mismatch(intArr, intArr1); // 1
 
 ```java
 // Simple Binary Search
+// ===
 List al = new ArrayList(); 
 al.add(1); 
 al.add(2); 
@@ -82,6 +126,7 @@ al.add(20);
 index = Collections.binarySearch(al, 15); 
 
 // Complex Binary Search
+// ===
 List<Domain> l = new ArrayList<Domain>(); 
 l.add(new Domain(10, "quiz.geeksforgeeks.org")); 
 l.add(new Domain(20, "practice.geeksforgeeks.org")); 
@@ -95,13 +140,16 @@ Comparator<Domain> c = new Comparator<Domain>()
 		return u1.getId().compareTo(u2.getId()); 
 	} 
 };
+
 int index = Collections.binarySearch(l, new Domain(10, null), c);
 
 // Swap
+// ===
 // Swap items at indexes 1 and 3 
 Collections.swap(mylist, 3, 1);
 
 // Shuffle
+// ===
 Collections.shuffle(mylist);
 // Here we use Random(3) to shuffle given list (User defined Shuffle). 
 Collections.shuffle(mylist, new Random(3));
@@ -126,9 +174,11 @@ System.out.println("is arr1 disjoint to arr4 : " +
 	Collections.disjoint(Arrays.asList(arr1), Arrays.asList(arr4))); // true
 	
 // Collections - Frequency: How many times does an item appear in a list?
+// ===
 int freq = Collections.frequency(mylist, "code"); 
 
 // Rotate Collections
+// ===
 // to rotate the element by distance 2 
 Collections.rotate(mylist, 2);
 Collections.rotate(Arrays.asList(arr), 2);

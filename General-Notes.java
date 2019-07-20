@@ -23,6 +23,36 @@ for (String i : capitalCities.keySet()) {
 	System.out.println(i);
 }
 
+// Queues
+// ======
+Queue<Integer> q = new LinkedList<>();
+// Add element 
+q.add(i);
+// Remove Queue Head
+int removedele = q.remove();
+// To view Queue Head
+int head = q.peek();
+// To get Queue Size
+int size = q.size();
+// To see if it contains an element
+bool exists = q.contains(i);
+
+// Stacks
+// ======
+Stack<Integer> stack = new Stack<Integer>();
+// Push element
+stack.push(i);
+// Pop element
+Integer y = (Integer) stack.pop();
+// View element at stack top
+Integer element = (Integer) stack.peek();
+// Search element
+Integer pos = (Integer) stack.search(element);
+// Size
+int size = stack.size();
+// To see if it contains an element
+bool exists = stack.contains(i);
+
 // Arrays
 // ======
 Arrays.sort(myCharArray1);
