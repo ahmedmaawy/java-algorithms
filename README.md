@@ -10,7 +10,7 @@ myList.clear();
 myList.size();
 ```
 
-### Hashmaps
+## Hashmaps
 
 ```java
 // Create a HashMap object called capitalCities
@@ -66,8 +66,8 @@ int intArr[] = { 10, 20, 15, 22, 35 };
 int intArr1[] = { 10, 15, 22 };
 Arrays.mismatch(intArr, intArr1); // 1
 ```
-[Deeper Array Reference](https://www.geeksforgeeks.org/array-class-in-java/)
-[Small reference on Sorting](https://www.baeldung.com/java-sorting-arrays)
+* [Deeper Array Reference](https://www.geeksforgeeks.org/array-class-in-java/)
+* [Small reference on Sorting](https://www.baeldung.com/java-sorting-arrays)
 
 ## Collections
 
