@@ -192,6 +192,8 @@ Collections.rotate(Arrays.asList(arr), 2);
 str1.replaceAll("\\s", "");
 // Array to list
 List<T> items = Arrays.asList(arr1);
+// List to Array
+Object[] array = list.toArray();
 
 // Character Array to String
 String newString = new String(charArray);
