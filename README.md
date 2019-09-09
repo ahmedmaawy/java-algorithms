@@ -183,6 +183,12 @@ int freq = Collections.frequency(mylist, "code");
 // to rotate the element by distance 2 
 Collections.rotate(mylist, 2);
 Collections.rotate(Arrays.asList(arr), 2);
+
+// Get a Max Value and the Index of
+// ===
+int myMaxValue = Collections.max(myIntsList);
+// indexOf() returns > -1 if element is found
+int myMaxElement = myIntsList.indexOf(myMaxValue);
 ```
 
 ## Misceleneous Utilities
@@ -207,4 +213,7 @@ str.contains(str2); // true / false
 
 // Check if a string matches a regular expression
 str.matches(regex); // true / false
+
+// Convert an int array to an Integer array
+Integer[] arr1 = Arrays.stream(intArray).boxed().toArray( Integer[]::new );
 ```

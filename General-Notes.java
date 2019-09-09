@@ -151,6 +151,12 @@ System.out.println("is arr1 disjoint to arr4 : " +
 Collections.rotate(mylist, 2);
 Collections.rotate(Arrays.asList(arr), 2);
 
+// Get a Max Value and the Index of
+// ===
+int myMaxValue = Collections.max(myIntsList);
+// indexOf() returns > -1 if element is found
+int myMaxElement = myIntsList.indexOf(myMaxValue);
+
 // Some useful functions
 // =====================
 // Remove all punctuations etc from a String
@@ -162,3 +168,5 @@ List<T> items = Arrays.asList(arr1);
 String newString = new String(charArray);
 // String to Character Array
 char[] charArray = str.toCharArray();
+// Convert an int array to an Integer array
+Integer[] arr1 = Arrays.stream(intArray).boxed().toArray( Integer[]::new );
